@@ -13,7 +13,6 @@ public class CommonController {
         model.addAttribute("title", "메인화면");
         model.addAttribute("content", "Spring boot Mybatis");
 
-
         return "index";
     }
 }
