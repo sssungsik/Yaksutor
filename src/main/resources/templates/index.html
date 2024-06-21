@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{user/layout/default}">
 <head>
-    <title>TITLE</title>
-</head>
-<!--xmlns:th="http://www.thymeleaf.org"
-xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-layout:decorate="~{layout/default}"-->
-<!--<head>
 </head>
 
 <th:block layout:fragment="customContent">
-    <h1 th:text="${content}">HELLO! SPRING BOOT!</h1>
+    <h1 th:text="${content}">메인 화면</h1>
 </th:block>
 
 <th:block layout:fragment="customJsFile">
 </th:block>
 
 <th:block layout:fragment="customJs">
-</th:block>-->
+</th:block>
 </html>
