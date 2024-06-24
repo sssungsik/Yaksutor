@@ -7,7 +7,7 @@
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <div class="deal" style="background-image: url('user/assets/imgs/banner/popup-1.png')">
+                    <div class="deal" style="background-image: url('@{/user/assets/imgs/banner/popup-1.png}')">
                         <div class="deal-top">
                             <h6 class="mb-10 text-brand-2">Deal of the Day</h6>
                         </div>
@@ -145,10 +145,7 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info">
                             <ul>
-                                <li><a href="page-about.htlm">About Us</a></li>
-                                <li><a href="page-account.html">My Account</a></li>
-                                <li><a href="shop-wishlist.html">Wishlist</a></li>
-                                <li><a href="shop-order.html">Order Tracking</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -161,35 +158,6 @@
                     <div class="col-xl-3 col-lg-4">
                         <div class="header-info header-info-right">
                             <ul>
-                                <li>Need help? Call Us: <strong class="text-brand"> + 1800 900</strong></li>
-                                <li>
-                                    <a class="language-dropdown-active" href="#">English <i class="fi-rs-angle-small-down"></i></a>
-                                    <ul class="language-dropdown">
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-fr.png}" alt="" />Français</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-dt.png}" alt="" />Deutsch</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-ru.png}" alt="" />Pусский</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-active" href="#">USD <i class="fi-rs-angle-small-down"></i></a>
-                                    <ul class="language-dropdown">
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-fr.png}" alt="" />INR</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-dt.png}" alt="" />MBP</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img th:src="@{/resource/user/assets/imgs/theme/flag-ru.png}" alt="" />EU</a>
-                                        </li>
-                                    </ul>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -205,20 +173,8 @@
                     <div class="header-right">
                         <div class="search-style-2">
                             <form action="#">
-                                <select class="select-active">
-                                    <option>All Categories</option>
-                                    <option>Milks and Dairies</option>
-                                    <option>Wines & Alcohol</option>
-                                    <option>Clothing & Beauty</option>
-                                    <option>Pet Foods & Toy</option>
-                                    <option>Fast food</option>
-                                    <option>Baking material</option>
-                                    <option>Vegetables</option>
-                                    <option>Fresh Seafood</option>
-                                    <option>Noodles & Rice</option>
-                                    <option>Ice cream</option>
-                                </select>
-                                <input type="text" placeholder="Search for items..." />
+
+                                <input type="text" placeholder="검색어를 입력해 주세요." />
                             </form>
                         </div>
                         <div class="header-action-right">
@@ -230,6 +186,16 @@
                                         <span class="pro-count blue">3</span>
                                     </a>
                                     <a href="shop-compare.html"><span class="lable ml-0">긴급의약품요청</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-receipt mr-10"></i>실시간 요청 목록</a>
+                                            </li>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-redo mr-10"></i>요청 조회</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
 
                                 <div class="header-action-icon-2">
@@ -278,28 +244,39 @@
                                 </div>
                                 <div class="header-action-icon-2">
                                     <a href="page-account.html">
-                                        <img class="svgInject" alt="Nest" th:src="@{/resource/user/assets/imgs/theme/icons/icon-user.svg}" />
+                                        <img class="svgInject" alt="Nest" th:src="@{/resource/user/assets/imgs/theme/icons/icon-heart.svg}" />
                                     </a>
-                                    <a href="page-account.html"><span class="lable ml-0">주문내역</span></a>
+                                    <a href="page-account.html"><span class="lable ml-0">주문 내역</span></a>
                                     <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                         <ul>
                                             <li>
-                                                <a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>My Account</a>
+                                                <a href="page-account.html"><i class="fi fi-rs-receipt mr-10"></i>주문 목록</a>
                                             </li>
                                             <li>
-                                                <a href="page-account.html"><i class="fi fi-rs-location-alt mr-10"></i>Order Tracking</a>
+                                                <a href="page-account.html"><i class="fi fi-rs-redo mr-10"></i>반품/취소</a>
                                             </li>
                                             <li>
-                                                <a href="page-account.html"><i class="fi fi-rs-label mr-10"></i>My Voucher</a>
+                                                <a href="page-account.html"><i class="fi fi-rs-rocket mr-10"></i>배송 조회</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-action-icon-2">
+                                    <a href="page-account.html">
+                                        <img class="svgInject" alt="Nest" th:src="@{/resource/user/assets/imgs/theme/icons/icon-user.svg}" />
+                                    </a>
+                                    <a href="page-account.html"><span class="lable ml-0">마이페이지</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            <li>
+                                                <a href="page-account.html"><i class="fi fi-rs-user mr-10"></i>내 정보</a>
                                             </li>
                                             <li>
-                                                <a href="shop-wishlist.html"><i class="fi fi-rs-heart mr-10"></i>My Wishlist</a>
+                                                <a href="page-account.html"><i class="fi fi-rs-money mr-10"></i>결제관리</a>
                                             </li>
+
                                             <li>
-                                                <a href="page-account.html"><i class="fi fi-rs-settings-sliders mr-10"></i>Setting</a>
-                                            </li>
-                                            <li>
-                                                <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>Sign out</a>
+                                                <a href="page-login.html"><i class="fi fi-rs-sign-out mr-10"></i>로그아웃</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -321,9 +298,9 @@
                         <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
                             <nav>
                                 <ul>
-                                    <li class="hot-deals"><img th:src="@{/resource/user/assets/imgs/theme/icons/icon-hot.svg}" alt="hot deals" /><a href="shop-grid-right.html">오늘특가</a></li>
+                                    <li class="hot-deals"><img th:src="@{/resource/user/assets/imgs/theme/icons/icon-hot-white.svg}" alt="hot deals" /><a href="shop-grid-right.html">오늘특가</a></li>
                                     <li>
-                                        <a class="active" href="index.html">홈</a>
+                                        <a href="index.html">홈</a>
                                     </li>
 
                                     <li>
@@ -376,7 +353,7 @@
                                         <a href="#">주문하기 </a>
                                         <ul class="mega-menu">
                                             <li class="sub-mega-menu sub-mega-menu-width-22">
-                                                <a class="menu-title" href="#">Fruit & Vegetables</a>
+                                                <a class="menu-title" href="#">1</a>
                                                 <ul>
                                                     <li><a href="shop-product-right.html">Meat & Poultry</a></li>
                                                     <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
@@ -472,10 +449,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="hotline d-none d-lg-flex">
-                        <img th:src="@{/resource/user/assets/imgs/theme/icons/icon-headphone.svg}" alt="hotline" />
-                        <p>1900 - 888<span>24/7 Support Center</span></p>
-                    </div>
+
                     <div class="header-action-icon-2 d-block d-lg-none">
                         <div class="burger-icon burger-icon-white">
                             <span class="burger-icon-top"></span>

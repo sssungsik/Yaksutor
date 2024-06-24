@@ -9,7 +9,7 @@ public class MemberController {
     @GetMapping("pharm/pharmMain")
     public String memberMain(Model model) {
 
-        return "pharm/pharmMain";
+        return "user/pharmacy/pharmMain";
     }
 
 }
